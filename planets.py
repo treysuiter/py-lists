@@ -28,11 +28,11 @@ def print_ship_and_planet():
 
     for planet in planet_list:
 
-        for ship in spacecraft:
+        for shipPlanetTup in spacecraft:
 
-            if planet == ship[1]:
+            if planet == shipPlanetTup[1]:
 
-                print(f"{ship[0]} has visited {planet}")
+                print(f"{shipPlanetTup[0]} has visited {planet}")
             
 
 print_ship_and_planet()

@@ -22,3 +22,17 @@ rocky_planets = planet_list[0:4]
 #Delete Pluto
 del planet_list[-1]
 
+spacecraft = [("Cool Ship", "Mercury"), ("Dumb Ship", "Venus"), ("Red Ship", "Earth"), ("Blue Ship", "Mars"), ("Grover's Ship", "Jupiter"), ("Firefly", "Saturn"), ("M. Falcon", "Uranus"), ("Enterprise", "Neptune")]
+
+def print_ship_and_planet():
+
+    for planet in planet_list:
+
+        for ship in spacecraft:
+
+            if planet == ship[1]:
+
+                print(f"{ship[0]} has visited {planet}")
+            
+
+print_ship_and_planet()
